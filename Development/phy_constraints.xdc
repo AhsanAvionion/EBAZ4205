@@ -4,10 +4,10 @@
 # ----------------------------------------------------------------------------
 # User LEDs
 # ---------------------------------------------------------------------------- 
-set_property IOSTANDARD LVCMOS33 [get_ports G_LED]
-set_property IOSTANDARD LVCMOS33 [get_ports R_LED]
-set_property PACKAGE_PIN W13 [get_ports {G_LED}];  # "GREEN_LED"    # OUTPUT
-set_property PACKAGE_PIN W14 [get_ports {R_LED}];  # "RED_LED"      # OUTPUT
+#set_property IOSTANDARD LVCMOS33 [get_ports G_LED]
+#set_property IOSTANDARD LVCMOS33 [get_ports R_LED]
+#set_property PACKAGE_PIN W13 [get_ports {G_LED}];  # "GREEN_LED"    # OUTPUT
+#set_property PACKAGE_PIN W14 [get_ports {R_LED}];  # "RED_LED"      # OUTPUT
 
 
 # ----------------------------------------------------------------------------
@@ -182,9 +182,9 @@ set_property PACKAGE_PIN W14 [get_ports {R_LED}];  # "RED_LED"      # OUTPUT
 # Clock Sources - Bank XX
 # ---------------------------------------------------------------------------- 
 #set_property IOSTANDARD LVCMOS33 [get_ports CLK_PS]
-set_property IOSTANDARD LVCMOS33 [get_ports CLK_X5]
+#set_property IOSTANDARD LVCMOS33 [get_ports CLK_X5]
 #set_property PACKAGE_PIN E7 [get_ports {CLK_PS}];   # input clk 33.333MHz "PS_CLK_500" Clk shared with FLASH memory
-set_property PACKAGE_PIN N18 [get_ports {CLK_X5}];  # input clk 50.000MHz # Use if you have X5 Oscillator and R1372 Resistor are soldered on board
+#set_property PACKAGE_PIN N18 [get_ports {CLK_X5}];  # input clk 50.000MHz # Use if you have X5 Oscillator and R1372 Resistor are soldered on board
 #create_clock -add -name clk_pin -period 10.00 -waveform {0 5} [get_ports { CLK_X5 }];
 
 
@@ -197,35 +197,35 @@ set_property PACKAGE_PIN N18 [get_ports {CLK_X5}];  # input clk 50.000MHz # Use 
 # ----------------------------------------------------------------------------
 # Ethernet Transceiver
 # ---------------------------------------------------------------------------- 
-set_property IOSTANDARD LVCMOS33 [get_ports GMII_ETHERNET_0_0_rx_clk]
-set_property IOSTANDARD LVCMOS33 [get_ports GMII_ETHERNET_0_0_tx_clk]
-set_property PACKAGE_PIN U14 [get_ports GMII_ETHERNET_0_0_rx_clk]
-set_property PACKAGE_PIN U15 [get_ports GMII_ETHERNET_0_0_tx_clk]
+#set_property IOSTANDARD LVCMOS33 [get_ports GMII_ETHERNET_0_0_rx_clk]
+#set_property IOSTANDARD LVCMOS33 [get_ports GMII_ETHERNET_0_0_tx_clk]
+#set_property PACKAGE_PIN U14 [get_ports GMII_ETHERNET_0_0_rx_clk]
+#set_property PACKAGE_PIN U15 [get_ports GMII_ETHERNET_0_0_tx_clk]
 
-set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_rxd[3]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_rxd[2]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_rxd[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_rxd[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_tx_en[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_txd[3]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_txd[2]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_txd[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_txd[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports GMII_ETHERNET_0_0_rx_dv]
-set_property IOSTANDARD LVCMOS33 [get_ports MDIO_ETHERNET_0_0_mdc]
-set_property IOSTANDARD LVCMOS33 [get_ports MDIO_ETHERNET_0_0_mdio_io]
-set_property PACKAGE_PIN Y17 [get_ports {GMII_ETHERNET_0_0_rxd[3]}]
-set_property PACKAGE_PIN V17 [get_ports {GMII_ETHERNET_0_0_rxd[2]}]
-set_property PACKAGE_PIN V16 [get_ports {GMII_ETHERNET_0_0_rxd[1]}]
-set_property PACKAGE_PIN Y16 [get_ports {GMII_ETHERNET_0_0_rxd[0]}]
-set_property PACKAGE_PIN W19 [get_ports {GMII_ETHERNET_0_0_tx_en[0]}]
-set_property PACKAGE_PIN W18 [get_ports {GMII_ETHERNET_0_0_txd[0]}]
-set_property PACKAGE_PIN Y18 [get_ports {GMII_ETHERNET_0_0_txd[1]}]
-set_property PACKAGE_PIN V18 [get_ports {GMII_ETHERNET_0_0_txd[2]}]
-set_property PACKAGE_PIN Y19 [get_ports {GMII_ETHERNET_0_0_txd[3]}]
-set_property PACKAGE_PIN W15 [get_ports MDIO_ETHERNET_0_0_mdc]
-set_property PACKAGE_PIN Y14 [get_ports MDIO_ETHERNET_0_0_mdio_io]
-set_property PACKAGE_PIN W16 [get_ports GMII_ETHERNET_0_0_rx_dv]
+#set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_rxd[3]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_rxd[2]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_rxd[1]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_rxd[0]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_tx_en[0]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_txd[3]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_txd[2]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_txd[1]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {GMII_ETHERNET_0_0_txd[0]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports GMII_ETHERNET_0_0_rx_dv]
+#set_property IOSTANDARD LVCMOS33 [get_ports MDIO_ETHERNET_0_0_mdc]
+#set_property IOSTANDARD LVCMOS33 [get_ports MDIO_ETHERNET_0_0_mdio_io]
+#set_property PACKAGE_PIN Y17 [get_ports {GMII_ETHERNET_0_0_rxd[3]}]
+#set_property PACKAGE_PIN V17 [get_ports {GMII_ETHERNET_0_0_rxd[2]}]
+#set_property PACKAGE_PIN V16 [get_ports {GMII_ETHERNET_0_0_rxd[1]}]
+#set_property PACKAGE_PIN Y16 [get_ports {GMII_ETHERNET_0_0_rxd[0]}]
+#set_property PACKAGE_PIN W19 [get_ports {GMII_ETHERNET_0_0_tx_en[0]}]
+#set_property PACKAGE_PIN W18 [get_ports {GMII_ETHERNET_0_0_txd[0]}]
+#set_property PACKAGE_PIN Y18 [get_ports {GMII_ETHERNET_0_0_txd[1]}]
+#set_property PACKAGE_PIN V18 [get_ports {GMII_ETHERNET_0_0_txd[2]}]
+#set_property PACKAGE_PIN Y19 [get_ports {GMII_ETHERNET_0_0_txd[3]}]
+#set_property PACKAGE_PIN W15 [get_ports MDIO_ETHERNET_0_0_mdc]
+#set_property PACKAGE_PIN Y14 [get_ports MDIO_ETHERNET_0_0_mdio_io]
+#set_property PACKAGE_PIN W16 [get_ports GMII_ETHERNET_0_0_rx_dv]
 
 
 
