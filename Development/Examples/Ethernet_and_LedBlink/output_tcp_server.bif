@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]D:\Workspace\EBAZ4205\led_blink_presets\led_blink_presets.sdk\fsbl\Debug\fsbl.elf
+	D:\Workspace\EBAZ4205\led_blink_presets\led_blink_presets.sdk\design_1_wrapper_hw_platform_0\design_1_wrapper.bit
+	D:\Workspace\EBAZ4205\led_blink_presets\led_blink_presets.sdk\tcp_server\Debug\tcp_server.elf
+}
